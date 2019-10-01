@@ -17,6 +17,10 @@
     -webkit-appearance: none;
     appearance: none;
 
+    &:focus {
+      outline: none;
+    }
+
     &::-ms-expand {
       display: none;
     }
