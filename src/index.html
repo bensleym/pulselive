@@ -9,10 +9,51 @@
     <link rel="stylesheet" href="./styles.scss" />
   </head>
   <body>
-    <section>
+    <section class="player-card">
       <div class="player-select">
-        <h1>Hello you</h1>
+        <select class="player-select__select">
+          <option value="" disabled selected>Select your option</option>
+          <option value="option1">Option 1</option>
+          <option value="option1">Option 2</option>
+          <option value="option1">Option 3</option>
+          <option value="option1">Option 4</option>
+        </select>
       </div>
+
+      <div class="player-image">
+        <img
+          src="./img/players/p2064.png"
+          alt="Player name"
+          class="player-image__image"
+        />
+      </div>
+
+      <section class="player-details">
+        <hgroup class="player-name">
+          <h1>Manchester United</h1>
+          <h2>Striker</h2>
+        </hgroup>
+        <div class="club-badge">
+          <span class="club-badge__image sr-only">Manchester United</span>
+        </div>
+
+        <div class="player-stats">
+          <ul class="player-stats__list">
+            <li class="player-stats__list-item">
+              <span class="player-stats__attribute">Apperance</span
+              ><span class="player-stats__stat">100</span>
+            </li>
+            <li class="player-stats__list-item">
+              <span class="player-stats__attribute">Goals</span
+              ><span class="player-stats__stat">50</span>
+            </li>
+            <li class="player-stats__list-item">
+              <span class="player-stats__attribute">Assists</span
+              ><span class="player-stats__stat">35</span>
+            </li>
+          </ul>
+        </div>
+      </section>
     </section>
   </body>
 </html>

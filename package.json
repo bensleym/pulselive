@@ -34,9 +34,6 @@
     "parcel-bundler": "^1.12.3",
     "prettier": "^1.18.2"
   },
-  "dependencies": {
-    "sass-google-fonts": "^1.0.1"
-  },
   "browserslist": [
     "last 2 Chrome versions",
     "last 2 ChromeAndroid versions",
