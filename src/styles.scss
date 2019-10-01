@@ -1,6 +1,43 @@
+@import "./sass/themeVariables";
 @import "./sass/playerCard";
 @import "./sass/playerSelect";
 @import "./sass/playerImage";
 @import "./sass/playerDetails";
-@import "./sass/playerName";
+@import "./sass/playerProfile";
 @import "./sass/clubBadge";
+@import "./sass/playerStats";
+
+body {
+  font-family: $font-family;
+  letter-spacing: $letter-spacing;
+  box-sizing: border-box;
+
+  h1,
+  h2,
+  ul,
+  li {
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: $font-size-lg;
+    font-weight: 300;
+  }
+
+  h2 {
+    font-size: $font-size-sm;
+    font-weight: 300;
+  }
+
+  .sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+}

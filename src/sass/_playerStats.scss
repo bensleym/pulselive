@@ -1,0 +1,21 @@
+.player-stats {
+  &__list {
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+  }
+
+  &__list-item {
+    list-style: none;
+    color: #38003c;
+    font-size: $font-size-sm;
+    padding: 12px;
+    background: #eaeaea;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

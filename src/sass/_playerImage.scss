@@ -1,8 +1,13 @@
 .player-image {
   width: 100%;
   background: url("./img/player_bg.jpg") top right no-repeat;
+  position: relative;
+  height: 225px;
 
   &__image {
-    max-width: 100%;
+    max-width: 55%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
 }
