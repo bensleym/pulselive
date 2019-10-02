@@ -14,5 +14,25 @@
       background: url("./img/badges_sprite.png") 480px 1120px;
       background-size: 960px 880px;
     }
+
+    &--tottenham-hotspur {
+      background: url("./img/badges_sprite.png") 560px 960px;
+      background-size: 960px 880px;
+    }
+
+    &--manchester-city {
+      background: url("./img/badges_sprite.png") 320px 1202px;
+      background-size: 960px 880px;
+    }
+
+    &--leicester-city {
+      background: url("./img/badges_sprite.png") 0px 0px;
+      background-size: 960px 880px;
+    }
+
+    &--arsenal {
+      background: url("./img/badges_sprite.png") 880px 803px;
+      background-size: 960px 880px;
+    }
   }
 }

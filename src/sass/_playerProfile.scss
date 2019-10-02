@@ -1,10 +1,10 @@
 .player-profile {
   &__name {
-    color: #fff;
+    color: $fontPrimary;
   }
 
   &__position {
-    color: #fff;
+    color: $fontPrimary;
     margin-top: 10px;
   }
 }

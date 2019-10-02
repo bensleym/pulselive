@@ -6,10 +6,10 @@
 
   &__list-item {
     list-style: none;
-    color: #38003c;
+    color: $fontTertiary;
     font-size: $font-size-sm;
     padding: 12px;
-    background: #eaeaea;
+    background: $gray-100;
     display: flex;
     justify-content: space-between;
     margin-bottom: 2px;

@@ -8,48 +8,32 @@
     <link rel="stylesheet" href="./styles.scss" />
   </head>
   <body>
-    <section class="player-card">
+    <section class="player-card" role="main">
       <div class="player-select">
-        <select class="player-select__select" id="playerSelect">
-          <option value="" disabled selected>Select your option</option>
+        <label class="sr-only" for="playerSelect"></label>
+        <select
+          class="player-select__select"
+          id="playerSelect"
+          aria-label="Select a player"
+        >
+          <option value="" disabled selected>Select a player</option>
         </select>
       </div>
 
-      <div class="player-image">
-        <img
-          src="./img/players/p2064.png"
-          alt="Player name"
-          class="player-image__image"
-        />
-      </div>
+      <div class="player-image" id="playerImage"></div>
 
       <section class="player-details">
         <hgroup class="player-profile">
-          <h1 class="player-profile__name">Wayne Rooney</h1>
-          <h2 class="player-profile__position">Striker</h2>
+          <h1 class="player-profile__name" id="playerName"></h1>
+          <h2 class="player-profile__position" id="playerPosition"></h2>
         </hgroup>
         <div class="club-badge">
-          <div
-            class="club-badge__image club-badge__image--manchester-united"
-          ></div>
-          <span class="sr-only">Manchester United</span>
+          <div class="club-badge__image" id="clubBadge"></div>
+          <span class="sr-only" id="playersClub"></span>
         </div>
 
         <div class="player-stats">
-          <ul class="player-stats__list">
-            <li class="player-stats__list-item">
-              <span class="player-stats__attribute">Apperance</span
-              ><span class="player-stats__stat">100</span>
-            </li>
-            <li class="player-stats__list-item">
-              <span class="player-stats__attribute">Goals</span
-              ><span class="player-stats__stat">50</span>
-            </li>
-            <li class="player-stats__list-item">
-              <span class="player-stats__attribute">Assists</span
-              ><span class="player-stats__stat">35</span>
-            </li>
-          </ul>
+          <ul class="player-stats__list" id="playerStats"></ul>
         </div>
       </section>
     </section>
