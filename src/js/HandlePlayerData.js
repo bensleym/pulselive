@@ -4,10 +4,10 @@ import playerImageController from "./playerImageController";
 class HandlePlayerData {
   constructor() {
     const playerDataPlayers = playerData.players;
+    const firstLoad = true;
+
     this.playerSelect = document.getElementById("playerSelect");
     this.playerStats = document.getElementById("playerStats");
-
-    const firstLoad = true;
 
     this.playerData(playerDataPlayers, "", firstLoad);
     this.selectPlayer(playerDataPlayers);
@@ -22,11 +22,11 @@ class HandlePlayerData {
   }
 
   playerData(playerDataPlayers, selectedPlayer, firstLoad) {
-    for (let i = 0; i < playerDataPlayers.length; i += 1) {
+    for (let player of playerDataPlayers) {
       if (firstLoad) {
-        this.createOption(playerData.players[i]);
+        this.createOption(player);
       }
-      this.updatePlayerInfo(playerDataPlayers[i], selectedPlayer);
+      this.updatePlayerInfo(player, selectedPlayer);
     }
   }
 
@@ -104,13 +104,13 @@ class HandlePlayerData {
   }
 
   createPlayerStatHTML(statData) {
-    for (let stat = 0; stat < statData.length; stat += 1) {
+    for (let stat of statData) {
       const htmlPlayerStat = `<li class="player-stats__list-item">
         <span class="player-stats__attribute">
-          ${this.convertStatName(statData[stat].name)}
+          ${this.convertStatName(stat.name)}
         </span>
         <span class="player-stats__stat">
-          ${statData[stat].value}
+          ${stat.value}
         </span>
       </li>`;
       this.playerStats.insertAdjacentHTML("beforeEnd", htmlPlayerStat);
