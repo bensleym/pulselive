@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-Required to run this build, you will need NodeJs installed on your machine
+Required to run this build, you will need Node.js installed on your machine. For further information and how to download Node.js please visit: `https://nodejs.org/en/`
 
 ## Local build
 
